@@ -120,7 +120,7 @@ create database Plataforma;
 	FOREIGN KEY (Id_frecuencia) REFERENCES Frecuencias (Id_frecuencia),
 	FOREIGN KEY (Id_documento) REFERENCES Documentos (Id_documento));
 
-	/* Plataforma V 2.1  21 de enero 2017*/
+	/* Plataforma V 2.1  21 de enero 2017 VERSION FINAL*/
 	create table Documentos(
 		Id_documento int (6) AUTO_INCREMENT,
 		Nombre varchar (30),
