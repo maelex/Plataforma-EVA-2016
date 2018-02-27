@@ -1,7 +1,7 @@
 ﻿<?php
 	set_time_limit(300);
-	$db="Plataforma";
-	$conexion=mysql_connect("localhost","root","showcandela") or die ("Error de conexion a la base de datos").mysql_error();
+	$db="YOUR_DATABASE";
+	$conexion=mysql_connect("localhost","YOUR_USER","YOUR_PASSWORD") or die ("Error de conexion a la base de datos").mysql_error();
 	mysql_select_db($db,$conexion) or die ("Error de conexion a la base de datos");
 
 
@@ -131,7 +131,7 @@
     			"lengthChange": false, //elimina un dropdown que permite elegir cuantos items se mostraran
     			"searching": false, //elimina el campo de busqueda
     			"bInfo": false, //elimina un texto debajo de la tabla que dice 10 de x
-    			"ordering": false, //elimina poder reordenar
+    			"ordering": false, //reordenar COLUMNAS
     			"language":{
     				"paginate":{
     					"next": "Siguiente",
@@ -139,13 +139,7 @@
     				},
     			}
     		});
-		});
-
-		//https://www.youtube.com/watch?v=PN5p-f2W-3k
-		/*Cursos de laravel
-https://www.youtube.com/watch?v=togIjDT95wo&list=PLIddmSRJEJ0u-5Nv2k6W8Vhe0wUP_7H5W <-- Curso 1
-https://www.youtube.com/watch?v=Zj0pshSSlEo&list=PLZPrWDz1MolrxS1uw-u7PrnK66DCFmhDR <-- Curso 2
-		*/
+		});		
   	</script>
 </body>
 </html>
