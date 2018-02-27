@@ -9,9 +9,8 @@ primordiales para el departamento en beneficio de estudiantes y profesores del C
 * MySQL
 
 Para facilitar la instalacion se recomienda instalar [Appserv](https://www.appserv.org/en/ "Appserv").
+>Se recomienda no utilizar PHP en su version 7 y utilizar el archivo **plataforma.sql** para la instalacion de la base de datos.
 
 ![Una imagen cualquiera](https://codigoseis.000webhostapp.com/img/App21.jpg "Index")
-
 ![Una imagen cualquiera](https://codigoseis.000webhostapp.com/img/App23.JPG "Resultados")
 
->Se recomienda no utilizar PHP en su version 7 y utilizar el archivo **plataforma.sql**
