@@ -9,4 +9,4 @@ primordiales para el departamento en beneficio de estudiantes y profesores del C
 * MySQL
 
 
-![Una imagen cualquiera](http://dummyimage.com/150 "De 150 x 150 píxeles")
+![Una imagen cualquiera](https://codigoseis.000webhostapp.com/img/App21.jpg "Index")
