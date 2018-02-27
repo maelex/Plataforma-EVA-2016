@@ -1,14 +1,6 @@
 ﻿<?php
 /*
-
-http://webslesson.blogspot.mx/2016/10/import-csv-file-data-into-mysql-database-using-php-ajax.html
-https://www.youtube.com/watch?v=sWVIYotPwZ0
-http://webslesson.blogspot.mx/2016/08/php-upload-remove-using-ajax-jquery.html
-https://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3
-
-https://www.youtube.com/watch?v=ABbAo0zUCfE
-
-http://www.gumonet.com/blog/subir-multiples-archivos-con-php-y-ajax/
+//Pagina de inicio
 */
 	set_time_limit(900);
 	$db="Plataforma";
@@ -32,7 +24,7 @@ http://www.gumonet.com/blog/subir-multiples-archivos-con-php-y-ajax/
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
  
-  <!--plugin del data table-->
+  <!--plugin Datatable-->
   <link rel="stylesheet" href="tabla/css/dataTables.bootstrap.css">
 </head>
 <body>
@@ -137,10 +129,10 @@ http://www.gumonet.com/blog/subir-multiples-archivos-con-php-y-ajax/
 
         //Seccion de busqueda
         var consulta;
-        $("#busqueda").focus(); //hacemos focus al campo de búsqueda
+        $("#busqueda").focus(); //campo de búsqueda
         $("#busqueda").keyup(function(e){ //comprobamos si se pulsa una tecla
         consulta = $("#busqueda").val(); //obtenemos el texto introducido en el campo de búsqueda
-            $.ajax({ //hace la búsqueda al enviarlos parametros
+            $.ajax({ //enviarlos parametros
                 type: "POST",
                 url: "busqueda.php",
                 data: "b="+consulta,
