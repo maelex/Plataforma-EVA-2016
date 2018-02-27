@@ -1,8 +1,8 @@
 <html>
 <?php
 	set_time_limit(900);
-	$db="Plataforma";
-	$conexion=mysql_connect("localhost","root","showcandela") or die ("Error de conexion a la base de datos").mysql_error();
+	$db="YOUR_DATABASE";
+	$conexion=mysql_connect("localhost","YOUR_USER","YOUR_PASSWORD") or die ("Error de conexion a la base de datos").mysql_error();
 	mysql_select_db($db,$conexion) or die ("Error de conexion a la base de datos");
 	date_default_timezone_set('America/Mexico_City');
 
@@ -38,8 +38,8 @@
 	}
 
 	function buscar($b){
-		$con = mysql_connect('localhost','root','showcandela');
-        mysql_select_db('plataforma', $con);
+		$con = mysql_connect('localhost','YOUR_USER','YOUR_PASSWORD');
+        mysql_select_db('YOUR_DATABSE', $con);
         $archivos=mysql_query("SELECT * FROM documentos where Nombre like '%".$b."%' OR Id_documento like '%".$b."%' ORDER BY Id_documento DESC",$con);
 
         $contar = mysql_num_rows($archivos);
