@@ -1,6 +1,6 @@
 <?php
 	//conexion
-	$conexion = new mysqli('localhost','root','showcandela','plataforma');
+	$conexion = new mysqli('localhost','YOUR_USER','YOUR_PASSWORD','YOUR_DATABASE');
 	if (mysqli_connect_errno()) {
    		printf("La conexión con el servidor de base de datos falló: %s\n", mysqli_connect_error());
    		exit();
