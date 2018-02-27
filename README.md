@@ -10,3 +10,12 @@ primordiales para el departamento en beneficio de estudiantes y profesores del C
 
 
 ![Una imagen cualquiera](https://codigoseis.000webhostapp.com/img/App21.jpg "Index")
+
+![Una imagen cualquiera](https://codigoseis.000webhostapp.com/img/App22.jpg "Index")
+
+![Una imagen cualquiera](https://codigoseis.000webhostapp.com/img/App23.jpg "Index")
+
+![Una imagen cualquiera](https://codigoseis.000webhostapp.com/img/App24.jpg "Index")
+
+![Una imagen cualquiera](https://codigoseis.000webhostapp.com/img/App25.jpg "Index")
+
