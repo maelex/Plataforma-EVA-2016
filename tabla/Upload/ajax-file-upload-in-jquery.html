@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title>How to upload file using jQuery, iframe and PHP</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <style type="text/css">
+  #upload_frame{
+	display:none;
+	height:0;
+	width:0;
+  }
+  #msg{
+	background-color:#FFE07E;
+	border-radius:5px;
+	padding:5px;
+	display:none;
+	width:200px;
+	font:italic 13px/18px arial,sans-serif;
+  }
+  </style>
+  <script type="text/javascript">
+  jQuery(document).ready(
+	  function(){
+			jQuery('#file_upload_form').submit(function(){
+					// show loader [optional line]
+					$('#msg').html('uploading....').fadeIn();
+				if(document.getElementById('upload_frame') == null) {
+					// create iframe
+					$('body').append('<iframe id="upload_frame" name="upload_frame"></iframe>');
+					$('#upload_frame').on('load',function(){
+						if($(this).contents()[0].location.href.match($(this).parent('form').attr('action'))){
+						// display server response [optional line]
+						$('#server_response').html($(this).contents().find('html').html());
+					    // hide loader [optional line]
+						$('#msg').hide();
+						}
+					})
+					$(this).attr('method','post');	
+					$(this).attr('enctype','multipart/form-data');	
+					$(this).attr('target','upload_frame').submit();						
+				}
+
+			});
+	  }
+  );
+	
+  </script>
+ </head>
+
+
+<body>
+		<div>
+			<form id="file_upload_form" action="upload.php"  >
+				<label for="upload_field">Select File</label>
+				<input type="file" id="upload_field" name="upload_field" />
+				<input type="submit" value="Upload" />
+			</form>
+			<div id="msg"></div>
+			<pre id="server_response"></pre>
+		</div>
+ </body>
+</html>
