@@ -14,3 +14,4 @@ Para facilitar la instalacion se recomienda instalar [Appserv](https://www.appse
 
 ![Una imagen cualquiera](https://codigoseis.000webhostapp.com/img/App23.JPG "Resultados")
 
+>Se recomienda no utilizar PHP en su version 7 y utilizar el archivo **plataforma.sql**
