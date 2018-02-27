@@ -15,7 +15,7 @@
 <?php
   set_time_limit(900);
   $db="Plataforma";
-  $conexion=mysql_connect("localhost","root","showcandela") or die ("Error de conexion a la base de datos").mysql_error();
+  $conexion=mysql_connect("localhost","YOUR_USER","YOUR_PASSWORD") or die ("Error de conexion a la base de datos").mysql_error();
   mysql_select_db($db,$conexion) or die ("Error de conexion a la base de datos");
   date_default_timezone_set('America/Mexico_City');
 
@@ -31,7 +31,6 @@
 
 ?>
 
-<!--http://mega-co-nz.biz/evitando-al-amor-2012-audio-latino-brrip-xvid-rgupudur1f/9722 -->
   <!--primera columna-->
   <?php if ($numTipo==1) { //Externas ?>
   <div class="table-responsive">
